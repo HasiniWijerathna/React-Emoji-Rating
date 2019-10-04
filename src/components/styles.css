@@ -1,0 +1,179 @@
+.inputR {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    opacity: 1;
+    outline: none;
+    margin: 0 auto;
+}
+.inputR::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background:lightgrey;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.rateContainer {
+    text-align: center;
+    width: 130px;
+    height: 100%;
+    ouline: thin solid lightgray;
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+.toolbox {
+    background: white;
+    height: 52px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .08), 0 2px 2px rgba(0, 0, 0, .15);
+    width: 300px;
+    border-radius: 40px;
+    top: -30px;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s;
+}
+.reaction {
+    border: none;
+    background-image: url(http://deividmarques.github.io/facebook-reactions-css/assets/images/facebook-reactions.png);
+    background-color: red;
+    display: block;
+    cursor: pointer;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    z-index: 11;
+    top: -28;
+    transform-origin: 50% 100%;
+    transform: scale(.1);
+    transition: all .3s;
+    outline: none;
+    will-change: transform;
+   /* opacity: 0;
+    */
+}
+.legendReaction {
+    background: rgba(0, 0, 0, .75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    line-height: 20px;
+    max-width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 6px;
+    transition: opacity 50ms ease;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: -28px;
+    transform: translateX(-50%);
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    height: 5em;
+    background: #ccc;
+    align-content: center 
+}
+.wrapper > div {
+    flex: 1;
+}
+.wrapper > .left {
+    background: white;
+}
+.wrapper > .right {
+    background: #ccf;
+}
+.wrapper > .yoo {
+    background: rebeccapurple;
+}
+.grow {
+    border-radius: 10px;
+    border-color: white;
+    background-color: white;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 50px;
+   /* padding: 4px;
+    */
+   /* 8 */
+    transition: all 0.5s;
+    cursor: pointer;
+    transition-property: transform;
+   /* margin: 1px;
+    */
+}
+/* Grow */
+/* .grow {
+    display: inline-block;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+*/
+.grow:hover {
+    transform: scale(1.1);
+}
+.emojiButton {
+    background-color: white;
+    border: 1px solid white;
+}
+/* horizontal bar */
+.emojiContainer {
+    display: flex;
+}
+.emojIitemBox {
+    flex-grow: 1;
+    background-color:white;
+}
+.emojIitemBox + .emojIitemBox {
+    margin-left: 0.1%;
+}
+.emojiInnerCont {
+    border: 2px solid white;
+    padding-left: px white;
+    padding-right: 10px white;
+}
+.emojiSliderContainer {
+    border: 2px solid white;
+    padding-left: px white;
+    padding-right: 10px white;
+    padding-top: 10% 
+}
+.tooltip {
+    position: relative;
+   /* display: inline-block;
+    */
+   /* border-bottom: 1px dotted black;
+    */
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    transition: opacity 0.1s;
+    background-color: #A67698 ;
+    border-radius: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-right:5px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
