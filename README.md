@@ -1,6 +1,6 @@
 # react-emoji-rating
 
-> A simple emoji rating component
+A simple emoji rating component
 
  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,6 +15,14 @@ Or ```yarn```
 yarn add react-emoji-rating
 
 ```
+## Emoji categories
+
+1. smileys
+2. emojiPeople
+3. emoticons
+4. funky
+5. classic (defalut)
+6. blobs
 
 ## Basic Usage
 
@@ -36,11 +44,12 @@ export default class App extends Component {
   }
 }
 ```
+
 ## Options
 
 | Property          | Type           | Description                              |
 | ------------------|:--------------:| ----------------------------------------:|
-| variant           | string         | Emoji category to be used                |
+| variant           | string         |Emoji category to be used                |
 | onChange          | func           |Called when the slider is moved with the silder value|
 
 
