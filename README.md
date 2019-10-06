@@ -1,8 +1,10 @@
-# React-Emoji-Rating
+# :nerd_face: React-Emoji-Rating 
 
 A simple emoji rating component
 
  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+ 
+ [![NPM](https://nodei.co/npm/react-emoji-rating.png)](https://nodei.co/npm/react-emoji-rating/)
 
 ## Install
 
@@ -13,7 +15,6 @@ Or ```yarn```
 
 ```bash
 yarn add react-emoji-rating
-
 ```
 ## Emoji categories
 
